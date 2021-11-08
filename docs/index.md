@@ -1,4 +1,7 @@
-## Bases de programación con R
+## Objetivo
+
+El objetivo de este repositorio es brindar una guía accesible, fácil y útil para comenzar a familiarizarse con las bases de programación con R, sus paqueterías y sus maravillosos usos dentro del mundo godín.
+
 
 Blablabla [editor on GitHub](https://github.com/Dulma-mora/Programacion-con-R/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
