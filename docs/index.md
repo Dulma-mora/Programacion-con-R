@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Bases de programación con R
 
 You can use the [editor on GitHub](https://github.com/Dulma-mora/Programacion-con-R/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
