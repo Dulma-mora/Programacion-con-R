@@ -32,6 +32,14 @@ Algunas de las actividades que podrán ser capaces de hacer si le tienen pacienc
 - Crear repositorios compartidos donde puedan guardar y consultar su información (GitHub).
 
 
+# Familiarizándose con el entorno de RStudio
+
+
+
+
+
+
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
