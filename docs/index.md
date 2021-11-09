@@ -101,13 +101,13 @@ De esta manera podemos concluir que todos los valores enteros son numéricos, pe
 Los valores lógicos, o también conocidos como 'valores booleanos', son solamente *dos* dígitos:
 
 ```markdown
-TRUE 
-FALSE
+`TRUE` 
+`FALSE`
 
 # Ambos son valores categóricos _mutualmente excluyentes_. Estos valores se suelen utilizar para mostrar condiciones: sí / no, obtenido / no obtenido, enfermo / no enfermo. Es muy común ver estas variables en tablas y data frames. También se pueden representar solo con sus iniciales mayúsculas:
 
-T
-F
+`T`
+`F`
 
 ```
 
@@ -116,9 +116,9 @@ F
 
 | Paciente | Enfermo |
 | ---      | ---     |
-| Emiliano | TRUE    |
-| Marlene  | TRUE    |
-| Dulma    | FALSE   |
+| Emiliano | `TRUE`    |
+| Marlene  | `TRUE`    |
+| Dulma    | `FALSE`   |
 
 # Si quisiésemos saber cuántas personas enfermas hay en la tabla, nuestra búsqueda se resume a calcular el número de TRUE en la columna de enfermos. Y lo mismo para encontrar a las personas sanas.
 ```
@@ -129,7 +129,7 @@ F
 Los valores de caractér son todas las secuencias de palabras o dígitos. Usualmente se usan para procesar cadenas de texto (palabras) y pueden mezclarse con números también. Sin embargo, los números que sean guardados como caracteres dejarán de poder usarse para hacer operaciones, ya que no se detectan como valores numéricos, sino como cadenas de texto.
 
 ```markdown
-# los valores de caracter se escriben con comillas *siempre*:
+# los valores de caracter se escriben con comillas **siempre**:
 
 "hola" # hola es un character value ahora
 "Tengo 5 gatos" # también las frases aunque incluyan números son procesadas como cadenas de texto
