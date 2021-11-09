@@ -10,7 +10,7 @@ _Por favor tenga paciencia para aprender._
 
 Por qué aprender a usar R.
 
-Familiarizándose con el entorno de RStudio.
+[Familiarizándose con el entorno de RStudio.] (https://github.com/Dulma-mora/Programacion-con-R/blob/main/docs/index.md#por-qu%C3%A9-aprender-a-usar-r)
 
 Tipos de datos.
 
