@@ -78,6 +78,9 @@ Los valores numéricos (numeric) corresponden a
 
 ```markdown
 1.2 # es un valor numérico
+-6.78 # es un valor numérico
+10 # es un valor numérico entero
+145*0.5 #el resultado de muchas operaciones es numérico
 ```
 
 
@@ -88,9 +91,23 @@ Los valores integer cumplen la característica de que son valores numéricos *en
 ```markdown
 1 # es un valor numérico
 -800 # también lo es
-
+546 - 125 # el resultado de cualquier operación que dé como resultado cualquier entero también lo es
 ```
 
+### Logical values
+
+Los valores lógicos, o también conocidos como 'valores booleanos', son solamente *dos* dígitos:
+
+```markdown
+TRUE 
+FALSE
+
+# Ambos son valores categóricos _mutualmente excluyentes_. Estos valores se suelen utilizar para mostrar condiciones: sí / no, obtenido / no obtenido, enfermo / no enfermo. Es muy común ver estas variables en tablas y data frames. También se pueden representar solo con sus iniciales mayúsculas:
+
+T
+F
+
+```
 
 
 
