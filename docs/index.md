@@ -140,7 +140,7 @@ Los valores de caractér son todas las secuencias de palabras o dígitos. Usualm
 
 # Objetos
 
-Ahora que vimos lo principales tipos de datos, es importante que sepamos qué hacer con ellos. No podemos simplemente ir escribiendo todas nuestras operaciones en la consola como si fuera una calculadora, eso haría que perdieramos muchos datos en el proceso, resultados e información útil. Es así que veremos qué son los objetos.
+Ahora que vimos los principales tipos de datos, es importante que sepamos qué hacer con ellos. No podemos simplemente ir escribiendo todas nuestras operaciones en la consola como si fuera una calculadora, eso haría que perdieramos muchos datos en el proceso, resultados e información útil. Es así que veremos qué son los objetos.
 
 ¿Qué es un objeto? Cuando hablamos de programación casi todo es un objeto.
 
@@ -163,7 +163,9 @@ caja1 - caja2   #si hacemos una operación entre nuestros dos objetos, ¿nos dar
 caja3 <- caja1 - caja2   # intentemos algo aún más loco, guardar el resultado de la operación dentro de otro objeto llamado "caja3"
 print(caja3)             # pregunta: ¿si imprimimos el valor de caja3 qué nos va a salir? 
 
-IMPORTANTE: Nota que lo que R guarda en los objetos son **RESULTADOS**, no procedimientos. Si imprimimos caja3 el output NO será "caja1-caja2" sino el resultado de dicha operación solamente, es decir "5". Prueba obteniendo la clase de caja3
+IMPORTANTE: Nota que lo que R guarda en los objetos son **RESULTADOS**, no procedimientos.
+Si imprimimos caja3 el output NO será "caja1-caja2" sino el resultado de dicha operación solamente, es decir "5".
+Prueba obteniendo la clase de caja3
 
 print(caja3)
 
