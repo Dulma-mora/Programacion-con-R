@@ -67,15 +67,27 @@ Es el espacio donde podremos controlar las configuraciones de nuestros archivos 
 # Tipos de datos
 
 En todos los lenguajes de programación existen diferentes tipos de datos. En R, hay numerosos tipos de datos, pero los principales son cuatro:
-- Numéricos.
+- Numeric.
 - Integers.
 - Logical.
 - Character.
 
-### Valores numéricos
+### Numeric values
+
+Los valores numéricos (numeric) corresponden a 
 
 ```markdown
-Blablabla
+1.2 # es un valor numérico
+```
+
+
+### Integer values
+
+Los valores integer cumplen la característica de que son valores numéricos *enteros*. Por ejemplo:
+
+```markdown
+1 # es un valor numérico
+-800 # también lo es
 
 ```
 
