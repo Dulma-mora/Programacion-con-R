@@ -10,7 +10,7 @@ _Por favor tenga paciencia para aprender._
 
 Por qué aprender a usar R.
 
-[Familiarizándose con el entorno de RStudio.] (https://github.com/Dulma-mora/Programacion-con-R/blob/main/docs/index.md#por-qu%C3%A9-aprender-a-usar-r)
+Familiarizándose con el entorno de RStudio.
 
 Tipos de datos.
 
@@ -25,7 +25,7 @@ Estructuras de datos.
 
 Si bien aprender a programar es una inversión a mediano plazo, las ventajas de ser godín programador son muy numerosas, ya que nos permite hacer las cosas de manera automatizada, compartida, eficiente y con más opciones de personalización.
 
-Algunas de las actividades que podrán ser capaces de hacer si le tienen paciencia a aprender este bonito lenguaje de programación son:
+Algunas de las actividades que podrán ser capaces de hacer si le tienen paciencia a aprender este bonito lenguaje son:
 - Cargar datos de una hoja de excel en R (uso de las paqueterías readxl y xlsx).
 - Filtrar datos de acuerdo a parámetros establecidos (uso de la paquetería dplyr).
 - Hacer gráficos sencillos pero atractivos de visualización de datos (uso de la paquetería ggplot2).
@@ -34,7 +34,9 @@ Algunas de las actividades que podrán ser capaces de hacer si le tienen pacienc
 
 # Familiarizándose con el entorno de RStudio
 
+Una vez que Emiliano les muestre cómo descargar R y RStudio en sus computadoras (aclaración, R es el lenguaje y RStudio el ambiente de desarrollo donde trabajaremos) encontrarán que al abrir este último, la pantalla de inicio se verá algo parecido a esto:
 
+![Interfaz de Rstudio](https://swcarpentry.github.io/r-novice-gapminder-es/fig/01-rstudio.png)
 
 
 
