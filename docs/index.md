@@ -18,6 +18,19 @@ Objetos.
 
 Estructuras de datos.
 
+...
+
+
+# ¿Por qué aprender a usar R?
+
+Si bien aprender a programar es una inversión a mediano plazo, las ventajas de ser godín programador son muy numerosas, ya que nos permite hacer las cosas de manera automatizada, compartida, eficiente y con más opciones de personalización.
+
+Algunas de las actividades que podrán ser capaces de hacer si le tienen paciencia a aprender este bonito lenguaje de programación son:
+- Cargar datos de una hoja de excel en R (uso de las paqueterías readxl y xlsx).
+- Filtrar datos de acuerdo a parámetros establecidos (uso de la paquetería dplyr).
+- Hacer gráficos sencillos pero atractivos de visualización de datos (uso de la paquetería ggplot2).
+- Crear repositorios compartidos donde puedan guardar y consultar su información (GitHub).
+
 
 ### Markdown
 
