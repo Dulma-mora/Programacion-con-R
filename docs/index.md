@@ -9,12 +9,14 @@ _Por favor tenga paciencia para aprender._
 ### Índice
 
 Por qué aprender a usar R.
+
 Familiarizándose con el entorno de RStudio.
+
 Tipos de datos.
+
 Objetos.
+
 Estructuras de datos.
-
-
 
 
 ### Markdown
@@ -39,5 +41,5 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
 
