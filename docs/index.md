@@ -124,9 +124,19 @@ F
 ```
 
 
-###Character values
+### Character values
 
+Los valores de caractér son todas las secuencias de palabras o dígitos. Usualmente se usan para procesar cadenas de texto (palabras) y pueden mezclarse con números también. Sin embargo, los números que sean guardados como caracteres dejarán de poder usarse para hacer operaciones, ya que no se detectan como valores numéricos, sino como cadenas de texto.
 
+```markdown
+# los valores de caracter se escriben con comillas *siempre*:
+
+"hola" # hola es un character value ahora
+"Tengo 5 gatos" # también las frases aunque incluyan números son procesadas como cadenas de texto
+"234322" # incluso los valores numéricos pueden guardarse así
+"2" + "2" # SIN EMBARGO, no podemos hacer ningún tipo de operación con caracteres. Si intentamos correr esto nos saldrá ERROR.
+
+```
 
 
 ## Markdown
