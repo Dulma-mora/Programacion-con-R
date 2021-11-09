@@ -1,10 +1,19 @@
 ## Bases de programación con R
 
-## Objetivo
+### Objetivo
 
 El objetivo de este repositorio es brindar una guía accesible, fácil y útil para comenzar a familiarizarse con las bases de programación con R, sus paqueterías y sus maravillosos usos dentro del mundo godín.
 
-## Índice
+_Por favor tenga paciencia para aprender._
+
+### Índice
+
+Por qué aprender a usar R.
+Familiarizándose con el entorno de RStudio.
+Tipos de datos.
+Objetos.
+Estructuras de datos.
+
 
 
 
