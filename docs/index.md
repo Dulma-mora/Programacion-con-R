@@ -184,16 +184,23 @@ print(caja3)
 
 ```
 
-
+##Ejercicios
 
 
 ```markdown
-
+# Crea un objeto llamado "a" y asígnale un valor numérico
 
 ```
 
+```markdown
+# Crea un objeto "b" y asigna una variable de caracter de cualquier longitud
 
+```
 
+```markdown
+# Imprime el valor de ambos objetos
+
+```
 
 
 
