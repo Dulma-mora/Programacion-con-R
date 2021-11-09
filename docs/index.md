@@ -80,7 +80,7 @@ Los valores numéricos (numeric) corresponden a
 1.2 # es un valor numérico
 -6.78 # es un valor numérico
 10 # es un valor numérico entero
-145*0.5 #el resultado de muchas operaciones es numérico
+145/0.5 #el resultado de muchas operaciones es numérico
 ```
 
 
@@ -93,6 +93,8 @@ Los valores integer cumplen la característica de que son valores numéricos *en
 -800 # también lo es
 546 - 125 # el resultado de cualquier operación que dé como resultado cualquier entero también lo es
 ```
+
+De esta manera podemos concluir que todos los valores enteros son numéricos, pero no todos los valores numéricos son enteros.
 
 ### Logical values
 
@@ -108,6 +110,22 @@ T
 F
 
 ```
+
+```markdown
+# Ejemplo de uso de valores lógicos
+
+| Paciente | Enfermo |
+| ---      | ---     |
+| Emiliano | TRUE    |
+| Marlene  | TRUE    |
+| Dulma    | FALSE   |
+
+# Si quisiésemos saber cuántas personas enfermas hay en la tabla, nuestra búsqueda se resume a calcular el número de TRUE en la columna de enfermos. Y lo mismo para encontrar a las personas sanas.
+```
+
+
+###Character values
+
 
 
 
