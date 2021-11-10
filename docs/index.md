@@ -141,11 +141,11 @@ Por ejemplo, con caracteres podemos guardar los nombres de pacientes de una tabl
 
 | Paciente   | Enfermo |
 | ---        | ---     |
-| "Emiliano" | TRUE    |
-| "Marlene"  | TRUE    |
-| "Dulma"    | FALSE   |
+| "Emiliano" | 'TRUE'    |
+| "Marlene"  | 'TRUE'    |
+| "Dulma"    | 'FALSE'   |
 
-Ahora R sí va a detectar los nombres
+Ahora R sí va a detectar los nombres.
 
 
 
@@ -199,6 +199,28 @@ print(caja3)
 # Imprime el valor de ambos objetos
 
 ```
+
+
+# Estructuras de datos
+
+En cualquier lenguaje de programación existen las estructuras de datos. Como ya hemos visto anteriormente, R se basa en la construcción de objetos que podemos modificar como queramos para hacer operaciones, consultas, correr algoritmos, etc. Sin embargo, dado en puntuales excepciones, casi nunca nos va a pasar que dentro de nuestros objetos tengamos valores aislados (como un 10 solito, una sola palabra, un número decimal individual...), sino que dentro de nuestros objetos tendremos datos ordenanos, es decir, probablemente en nuestros objetos tengamos tablas, matrices, archivos de excel, gráficas o vectores. No un solo número pedorro.
+
+Es así que lógicamente podemos intuir que las _estructuras de datos_ son todas aquellas maneras existentes de ordenar nuestros datos (duh). Al igual que con los tipos de datos, estas estructuras son muy numerosas, pero las principales son:
+
+- Vectores.
+- Factores.
+- Matrices y arreglos (arrays).
+- *Data frames*.
+- Listas.
+
+A continuación veremos las propiedades y generalidades de cada una de estas estructuras.
+
+### Vectores
+
+Los vectores son 
+
+
+
 
 
 
