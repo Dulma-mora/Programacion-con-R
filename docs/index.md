@@ -219,7 +219,7 @@ A continuación veremos las propiedades, generalidades de cada una de estas estr
 
 En programación un vector está definido como "una zona de almacenamiento contiguo que contiene una serie lineal de elementos del mismo tipo" (*Bell, 2003*). En otras palabras, un vector es simplemente un conjunto de elementos ordenados en fila, es decir que es de una sola dimensión. 
 
-! [lol] (https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Array1.svg/1920px-Array1.svg.png)
+![lol](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Array1.svg/1920px-Array1.svg.png)
 
 El ejemplo por excelencia de un vector es una secuencia numérica, por ejemplo, del 1 al 10 o del 1 al 100.
 
