@@ -111,7 +111,7 @@ Los valores lógicos, o también conocidos como 'valores booleanos', son solamen
 
 ```
 
-```markdown
+
 # Ejemplo de uso de valores lógicos
 
 | Paciente | Enfermo   |
@@ -120,8 +120,8 @@ Los valores lógicos, o también conocidos como 'valores booleanos', son solamen
 | Marlene  | `TRUE`    |
 | Dulma    | `FALSE`   |
 
-# Si quisiésemos saber cuántas personas enfermas hay en la tabla, nuestra búsqueda se resume a calcular el número de TRUE en la columna de enfermos. Y lo mismo para encontrar a las personas sanas.
-```
+Si quisiésemos saber cuántas personas enfermas hay en la tabla, nuestra búsqueda se resume a calcular el número de TRUE en la columna de enfermos. Y lo mismo para encontrar a las personas sanas.
+
 
 
 ### Character values
@@ -137,8 +137,7 @@ Los valores de caractér son todas las secuencias de palabras o dígitos. Usualm
 "2" + "2" # SIN EMBARGO, no podemos hacer ningún tipo de operación con caracteres. Si intentamos correr esto nos saldrá ERROR.
 ```
 
-```markdown
-# Por ejemplo, con caracteres podemos guardar los nombres de pacientes de una tabla:
+Por ejemplo, con caracteres podemos guardar los nombres de pacientes de una tabla:
 
 | Paciente   | Enfermo |
 | ---        | ---     |
@@ -146,9 +145,8 @@ Los valores de caractér son todas las secuencias de palabras o dígitos. Usualm
 | "Marlene"  | TRUE    |
 | "Dulma"    | FALSE   |
 
-# Ahora R sí va a detectar los nombres
+Ahora R sí va a detectar los nombres
 
-```
 
 
 # Objetos
