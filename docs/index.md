@@ -221,7 +221,7 @@ En programación un vector está definido como "una zona de almacenamiento conti
 
 ![lol](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Array1.svg/1920px-Array1.svg.png)
 
-El ejemplo por excelencia de un vector es una secuencia numérica, por ejemplo, del 1 al 10 o del 1 al 100.
+El ejemplo por excelencia de un vector es una secuencia numérica, digamos, del 1 al 10 o del 1 al 100.
 
 ```markdown
 # Para crear un vector SIEMPRE tenemos que decirle a R que queremos hacer una serie lineal,
