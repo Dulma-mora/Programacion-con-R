@@ -209,17 +209,37 @@ Es así que lógicamente podemos intuir que las _estructuras de datos_ son todas
 
 - Vectores.
 - Factores.
-- Matrices y arreglos (arrays).
-- *Data frames*.
+- Matrices.
+- **Data frames**.
 - Listas.
 
-A continuación veremos las propiedades y generalidades de cada una de estas estructuras.
+A continuación veremos las propiedades, generalidades de cada una de estas estructuras y cuando es conveniente trabajar con una o con otra.
 
 ### Vectores
 
-Los vectores son 
+En programación un vector está definido como "una zona de almacenamiento contiguo que contiene una serie lineal de elementos del mismo tipo" (*Bell, 2003*). En otras palabras, un vector es simplemente un conjunto de elementos ordenados en fila, es decir que es de una sola dimensión. 
+
+! [lol] (https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Array1.svg/1920px-Array1.svg.png)
+
+El ejemplo por excelencia de un vector es una secuencia numérica, por ejemplo, del 1 al 10 o del 1 al 100.
+
+```markdown
+# Para crear un vector SIEMPRE tenemos que decirle a R que queremos hacer una serie lineal,
+# hacemos esto con la función c() que significa concatenar
+
+a <- c(1,2,3,4,5,6,7,8,9,10)  # hemos creado un objeto llamado "a" donde guardamos un vector con los números del 1 al 10
+
+# Sin embargo, no es muy cómodo ir escribiendo número por número los elementos de nuestro vector.
+# ¿Qué pasaría si queremos hacer un vector de 1000 números?
+# Esto se soluciona con " : ", que se puede leer como "de tal a tal número
+
+b <- c( 1:10 )  # esta instrucción se puede leer como "crea un objeto b donde guardes un vector del 1 al 10 (de tal a tal numero)
+
+```
+Cada uno de 
 
 
+En un arreglo o vector podemos guardar dichos elementos del mismo tipo, por lo que no solo podemos guardar series numéricas sino también series de caracteres por ejemplo.
 
 
 
