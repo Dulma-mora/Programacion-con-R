@@ -231,15 +231,17 @@ a <- c(1,2,3,4,5,6,7,8,9,10)  # hemos creado un objeto llamado "a" donde guardam
 
 # Sin embargo, no es muy cómodo ir escribiendo número por número los elementos de nuestro vector.
 # ¿Qué pasaría si queremos hacer un vector de 1000 números?
-# Esto se soluciona con " : ", que se puede leer como "de tal a tal número
+# Esto se soluciona con " : ", que se puede leer como "de tal a tal número"
 
 b <- c( 1:10 )  # esta instrucción se puede leer como "crea un objeto b donde guardes un vector del 1 al 10 (de tal a tal numero)
 
 ```
-Cada uno de 
+Ahora que sabemos qué es un vector, es necesario aclarar que una característica muy importante de ellos es que cada elemento cuenta con una celda para él. Estas celdas individuales reciben el nombre de posición o subíndice 
 
 
 En un arreglo o vector podemos guardar dichos elementos del mismo tipo, por lo que no solo podemos guardar series numéricas sino también series de caracteres por ejemplo.
+
+
 
 
 
