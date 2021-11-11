@@ -67,14 +67,14 @@ Es el espacio donde podremos controlar las configuraciones de nuestros archivos 
 # Tipos de datos
 
 En todos los lenguajes de programación existen diferentes tipos de datos. En R, hay numerosos tipos de datos, pero los principales son cuatro:
-- Numeric.
+- Double.
 - Integers.
 - Logical.
 - Character.
 
-### Numeric values
+### Double values
 
-Los valores numéricos (numeric) corresponden a 
+Los valores del tipo double corresponden a ___
 
 ```markdown
 1.2 # es un valor numérico
@@ -149,22 +149,22 @@ Ahora R sí va a detectar los nombres.
 
 
 
-# Objetos
+# Variables
 
-Ahora que vimos los principales tipos de datos, es importante que sepamos qué hacer con ellos. No podemos simplemente ir escribiendo todas nuestras operaciones en la consola como si fuera una calculadora, eso haría que perdieramos muchos datos en el proceso, resultados e información útil. Es así que veremos qué son los objetos.
+Ahora que vimos los principales tipos de datos, es importante que sepamos qué hacer con ellos. No podemos simplemente ir escribiendo todas nuestras operaciones en la consola como si fuera una calculadora, eso haría que perdieramos muchos datos en el proceso, resultados e información útil. Es así que veremos qué son las variables.
 
-¿Qué es un objeto? Cuando hablamos de programación casi todo es un objeto.
+¿Qué es una variable? Cuando hablamos de programación casi todo es una variable.
 
-_TIP:_ Es útil pensar en los objetos como si fueran cajas donde guardamos cualquier cosa dentro de R. En una caja podemos guardar una palabra, un número, un resultado, un valor booleano, incluso tablas, listas, matrices, gráficos... lo que quieras. Y lo importante es que las "cajas" donde guardemos nuestra información, adquieren las características de nuestros valores guardados.
+_TIP:_ Es útil pensar en las variables como si fueran cajas donde guardamos cualquier cosa dentro de R. En una caja podemos guardar una palabra, un número, un resultado, un valor booleano, incluso tablas, listas, matrices, gráficos... lo que quieras. Y lo importante es que las "cajas" donde guardemos nuestra información, adquieren las características de nuestros valores guardados.
 
 ```markdown
-# Para crear un objeto / caja / variable necesitamos darle un nombre y declararla con <-
+# Para crear una caja / variable necesitamos darle un nombre y declararla con <-
 # Ejemplo:
 
-caja1 <- 10    # aquí hemos creado un objeto o caja llamado "caja1" y dentro hemos guardado un valor numérico entero (10)
+caja1 <- 10    # aquí hemos creado una variable o caja llamado "caja1" y dentro hemos guardado un valor numérico entero (10)
 
-print(caja1)  # ¿qué crees que aparezca si imprimes el contenido de caja1?
-class(caja1)  # esta función nos permite ver la clase de un objeto. Si dentro de nuestra caja hay un 10, ¿qué clase de objeto es "caja1"?
+print(caja1)  # ¿qué crees que aparezca si imprimes el contenido de caja1? La función print() imprime el contenido de una variable
+class(caja1)  # esta otra función nos permite ver la clase de un objeto. Si dentro de nuestra caja hay un 10, ¿qué clase de objeto es "caja1"?
 
 caja2 <- 5    # hemos creado otro objeto distinto donde guardamos un 5
 
