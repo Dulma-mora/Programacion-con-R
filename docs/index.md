@@ -282,6 +282,7 @@ v.familia <- c("Emiliano", "Natalia", "Dulce", "Josue", "Martha") # creamos un v
 v.familia[3] 
 
 # Dulce es el nombre que ocupa la tercera posición
+```
 
 Ejercicios
 
