@@ -248,21 +248,42 @@ En este sencillo ejemplo, podemos ver que el subíndice 1 tiene un valor de 18, 
 
 ![ejemplo](https://progracomputacional.files.wordpress.com/2015/08/vecuni.gif)
 
-En un arreglo o vector podemos guardar dichos elementos del mismo tipo, por lo que no solo podemos guardar series numéricas sino también series de caracteres.
+Fácil 😄
+
+Ahora recordemos que en un arreglo o vector podemos guardar elementos del mismo tipo, por lo que no solo podemos guardar series numéricas sino también series de caracteres.
 
 ```markdown
 # Creemos un vector de caracteres
 
 v.character <- c("hola", "cómo", "estás", "?")
 print(v.character) # tenemos una secuencia lineal de valores del tipo character 
+```
+Siguiendo la misma lógica de la ilustración pasada, cada subíndice ahora en lugar de guardar un valor numérico almacena un valor de caracter.
 
+**Importante.** Toda esta explicación fue necesaria para llegar al punto central de los vectores: puedes acceder a los subíndices de manera sencilla usando corchetes " [] "
 
+```markdown
+# Creémos un vector numérico con los dígitos del 25 al 52
+v.numerico <- c(25:52)
+
+# PREGUNTA. Si estuvieras en excel o cualquier otro programa, ¿cómo accederías al valor 17 del vector?
+# ¿Cómo lo harías en R? -> la respuesta es simplemente usando []
+v.numerico[17] 
+
+# así obtenemos el valor número 17 de nuestro vector, que corresponde al número 41
 ```
 
+Otro ejemplo más con vectores de caracter:
 
+```markdown
+v.familia <- c("Emiliano", "Natalia", "Dulce", "Josue", "Martha") # creamos un vector llamado v.familia donde están los nombres de los integrantes de mi familia lol
 
+# queremos obtener el nombre que ocupa la posición 3, la lógica es la misma:
+v.familia[3] 
 
+# Dulce es el nombre que ocupa la tercera posición
 
+```
 
 
 
