@@ -236,10 +236,28 @@ a <- c(1,2,3,4,5,6,7,8,9,10)  # hemos creado un objeto llamado "a" donde guardam
 b <- c( 1:10 )  # esta instrucción se puede leer como "crea un objeto b donde guardes un vector del 1 al 10 (de tal a tal numero)
 
 ```
-Ahora que sabemos qué es un vector, es necesario aclarar que una característica muy importante de ellos es que cada elemento cuenta con una celda para él. Estas celdas individuales reciben el nombre de posición o subíndice 
+Ahora que sabemos qué es un vector, es necesario aclarar que una característica muy importante de ellos es que cada elemento cuenta con una celda para él. Estas celdas individuales reciben el nombre de posición o subíndice. En el caso de nuestra secuencia 1:10, resulta fácil ubicar la posición de cada dígito, la posición 1 va con el primer valor (1), la segunda con el segundo valor (2), la tercera con el tercer valor (3)... etc. Pero casi nunca será ese nuestro caso. Ilustremos un ejemplo:
+
+Queremos almacenar la edad de 6 personas, dado que solo queremos hacer una secuencia de estas edades, el producto resultante es un vector numérico.
+
+```markdown
+EDAD <- c(18, 22, 25, 23, 17, 19) # creamos un objeto/variable llamado 'EDAD' donde guardamos un vector de 5 elementos, cada elemento corresponde a una edad
+print(EDAD)
+```
+En este sencillo ejemplo, podemos ver que el subíndice 1 tiene un valor de 18, el subíndice 2 tiene uno de 22... y así y así. Ahora que hemos explicado bien la idea, podemos pensar en nuestro vector (y en todos los vectores) de la siguiente manera:
+
+![ejemplo](https://progracomputacional.files.wordpress.com/2015/08/vecuni.gif)
+
+En un arreglo o vector podemos guardar dichos elementos del mismo tipo, por lo que no solo podemos guardar series numéricas sino también series de caracteres.
+
+```markdown
+# Creemos un vector de caracteres
+
+v.character <- c("hola", "cómo", "estás", "?")
+print(v.character) # tenemos una secuencia lineal de valores del tipo character 
 
 
-En un arreglo o vector podemos guardar dichos elementos del mismo tipo, por lo que no solo podemos guardar series numéricas sino también series de caracteres por ejemplo.
+```
 
 
 
