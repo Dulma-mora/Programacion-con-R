@@ -283,7 +283,27 @@ v.familia[3]
 
 # Dulce es el nombre que ocupa la tercera posición
 
+Ejercicios
+
+```markdown
+# Crea un vector con el nombre que quieras donde guardes una secuencia del 34 al 128
+# Después accede al número en la posición 37
+
 ```
+
+```markdown
+# Crea un vector donde guardes los nombres de: el amor de tu vida, la persona que más te caiga gorda del trabajo,
+# el niño que te pegaba en la primaria, tu mejor amigo, el famoso que más odies y tu película favorita
+# Después accede al nombre de la posición 4
+
+```
+
+
+
+
+
+
+
 
 
 
