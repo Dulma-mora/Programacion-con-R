@@ -68,32 +68,45 @@ Es el espacio donde podremos controlar las configuraciones de nuestros archivos 
 
 En R, las estructuras de datos pueden ser organizadas respecto a su dimensión y su contenido. Por dimensión entendemos que es una estructura plana de una dimensión, de dos dimensiones o de n dimensiones. Por su contenido nos referimos a si es homogeneo (datos del mismo tipo) o heterogeneo (datos de distintos tipos). Así, tenemos la siguiente clasificación para referirse a los cinco tipos de datos en R:
 
-
-| Dimensoones |Homogéneo | heterogéneo |
+| Dimensiones |Homogéneo | Heterogéneo |
 |---        | ---         | ---|
 | 1d | Vectores atómicos | List |
 | 2d | Matrices | Data Frames |
 | 3d | Arrays | 
 
-En todos los lenguajes de programación existen diferentes tipos de datos. En R, consideramos que los da:
-- Double.
+## Vectores
+
+Los vectores son la unidad de estructura básica en R y cualquier lenguaje de programación. Los vectores pueden ser de dos tipos: **atómicos o listas**. Todos los vectores tienen tres características en común:
+1. Pertenecen a una clasificación.
+2. Tienen una longitud.
+3. Tienen atributos.
+
+De manera general, los datos que conforman a los vectores atómicos son del mismo tipo, mientras que los elementos que conforman a las listas pueden ser de diferentes tipos.
+
+### Vectores atómicos
+
+Existen cuatro tipos de vectores atómicos. Y además de lo anteriormente mencionado, es útil mencionar que los puedes reconocer porque suelen ser formados con la función 'c()' (combinar o concatenar). Estos cuatro vectores atómicos son:
+
+- Double (también llamado numeric).
 - Integers.
 - Logical.
 - Character.
 
-### Double values
+**Los vectores atómicos son siempre planos, es decir, de una dimensión**
 
-Los valores del tipo double corresponden a ___
+#### Double values
+
+Los valores del tipo double corresponden a datos del tipo numérico que pueden ser o bien, números enteros y no enteros.
 
 ```markdown
-1.2 # es un valor numérico
--6.78 # es un valor numérico
-10 # es un valor numérico entero
-145/0.5 #el resultado de muchas operaciones es numérico
+1.2 # es double
+-6.78 # es double
+10 # es un valor numérico entero (double aún)
+145/87 #el resultado de muchas operaciones con números decimales es double
 ```
 
 
-### Integer values
+#### Integer values
 
 Los valores integer cumplen la característica de que son valores numéricos *enteros*. Por ejemplo:
 
@@ -105,9 +118,9 @@ Los valores integer cumplen la característica de que son valores numéricos *en
 
 De esta manera podemos concluir que todos los valores enteros son numéricos, pero no todos los valores numéricos son enteros.
 
-### Logical values
+#### Logical values
 
-Los valores lógicos, o también conocidos como 'valores booleanos', son solamente *dos* dígitos:
+Los vectores atómicos lógicos, o también conocidos como 'valores booleanos', son valores binarios del tipo 0 - 1 representados con:
 
 ```markdown
 `TRUE` 
@@ -119,7 +132,6 @@ Los valores lógicos, o también conocidos como 'valores booleanos', son solamen
 `F`
 
 ```
-
 
 # Ejemplo de uso de valores lógicos
 
@@ -133,7 +145,7 @@ Si quisiésemos saber cuántas personas enfermas hay en la tabla, nuestra búsqu
 
 
 
-### Character values
+#### Character values
 
 Los valores de caractér son todas las secuencias de palabras o dígitos. Usualmente se usan para procesar cadenas de texto (palabras) y pueden mezclarse con números también. Sin embargo, los números que sean guardados como caracteres dejarán de poder usarse para hacer operaciones, ya que no se detectan como valores numéricos, sino como cadenas de texto.
 
