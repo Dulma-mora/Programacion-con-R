@@ -66,7 +66,16 @@ Es el espacio donde podremos controlar las configuraciones de nuestros archivos 
 
 # Tipos de datos
 
-En todos los lenguajes de programación existen diferentes tipos de datos. En R, hay numerosos tipos de datos, pero los principales son cuatro:
+En R, las estructuras de datos pueden ser organizadas respecto a su dimensión y su contenido. Por dimensión entendemos que es una estructura plana de una dimensión, de dos dimensiones o de n dimensiones. Por su contenido nos referimos a si es homogeneo (datos del mismo tipo) o heterogeneo (datos de distintos tipos). Así, tenemos la siguiente clasificación para referirse a los cinco tipos de datos en R:
+
+
+| Homogéneo | heterogéneo |
+|---        | ---         |
+| 1d | Vectores atómicos | List |
+| 2d | Matrices | Data Frames |
+| 3d | Arrays | 
+
+En todos los lenguajes de programación existen diferentes tipos de datos. En R, consideramos que los da:
 - Double.
 - Integers.
 - Logical.
