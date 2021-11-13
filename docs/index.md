@@ -133,7 +133,7 @@ Los vectores atómicos lógicos, o también conocidos como 'valores booleanos', 
 
 ```
 
-# Ejemplo de uso de valores lógicos
+#### Ejemplo de uso de valores lógicos
 
 | Paciente | Enfermo   |
 | ---      | ---       |
@@ -167,6 +167,100 @@ Por ejemplo, con caracteres podemos guardar los nombres de pacientes de una tabl
 | "Dulma"    | 'FALSE'   |
 
 Ahora R sí va a detectar los nombres.
+
+
+
+Además, podemos pensar en los vectores atómicos simplemente como un conjunto de elementos ordenados en fila, es decir que es de una sola dimensión. 
+
+![lol](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Array1.svg/1920px-Array1.svg.png)
+
+El ejemplo por excelencia de un vector atómico es una secuencia numérica, digamos, del 1 al 10 o del 1 al 100.
+
+```markdown
+# Para crear un vector SIEMPRE tenemos que decirle a R que queremos hacer una serie lineal,
+# hacemos esto con la función c( ) 
+
+a <- c(1,2,3,4,5,6,7,8,9,10)  # hemos creado un objeto llamado "a" donde guardamos un vector con los números del 1 al 10
+
+# Sin embargo, no es muy cómodo ir escribiendo número por número los elementos de nuestro vector.
+# ¿Qué pasaría si queremos hacer un vector de 1000 números?
+# Esto se soluciona con " : ", que se puede leer como "de tal a tal número"
+
+b <- c( 1:10 )  # esta instrucción se puede leer como "crea un objeto b donde guardes un vector del 1 al 10 (de tal a tal numero)
+
+```
+Ahora que sabemos qué es un vector atómico, es necesario aclarar que una característica muy importante de ellos es que cada elemento cuenta con una celda para él. Estas celdas individuales reciben el nombre de posición o subíndice. En el caso de nuestra secuencia 1:10, resulta fácil ubicar la posición de cada dígito, la posición 1 va con el primer valor (1), la segunda con el segundo valor (2), la tercera con el tercer valor (3)... etc. Pero casi nunca será ese nuestro caso. Ilustremos un ejemplo:
+
+Queremos almacenar la edad de 6 personas, dado que solo queremos hacer una secuencia de estas edades, el producto resultante es un vector numérico.
+
+```markdown
+EDAD <- c(18, 22, 25, 23, 17, 19) # creamos un objeto/variable llamado 'EDAD' donde guardamos un vector de 5 elementos, cada elemento corresponde a una edad
+print(EDAD)
+```
+En este sencillo ejemplo, podemos ver que el subíndice 1 tiene un valor de 18, el subíndice 2 tiene uno de 22... y así y así. Ahora que hemos explicado bien la idea, podemos pensar en nuestro vector (y en todos los vectores) de la siguiente manera:
+
+![ejemplo](https://progracomputacional.files.wordpress.com/2015/08/vecuni.gif)
+
+Fácil 😄
+
+Ahora recordemos que en un vector atómico podemos guardar elementos del mismo tipo, por lo que no solo podemos guardar series numéricas sino también series de caracteres.
+
+```markdown
+# Creemos un vector de caracteres
+
+v.character <- c("hola", "cómo", "estás", "?")
+print(v.character) # tenemos una secuencia lineal de valores del tipo character 
+```
+Siguiendo la misma lógica de la ilustración pasada, cada subíndice ahora en lugar de guardar un valor numérico almacena un valor de caracter.
+
+**Importante.** Toda esta explicación fue necesaria para llegar al punto central de los vectores: puedes acceder a los subíndices de manera sencilla usando corchetes " [] "
+
+```markdown
+# Creémos un vector numérico con los dígitos del 25 al 52
+v.numerico <- c(25:52)
+
+# PREGUNTA. Si estuvieras en excel o cualquier otro programa, ¿cómo accederías al valor 17 del vector?
+# ¿Cómo lo harías en R? -> la respuesta es simplemente usando []
+v.numerico[17] 
+
+# así obtenemos el valor número 17 de nuestro vector, que corresponde al número 41
+```
+
+Otro ejemplo más con vectores de caracter:
+
+```markdown
+v.familia <- c("Emiliano", "Natalia", "Dulce", "Josue", "Martha") # creamos un vector llamado v.familia donde están los nombres de los integrantes de mi familia lol
+
+# queremos obtener el nombre que ocupa la posición 3, la lógica es la misma:
+v.familia[3] 
+
+# Dulce es el nombre que ocupa la tercera posición
+```
+
+Ejercicios
+
+*1*
+```markdown
+# Crea un vector con el nombre que quieras donde guardes una secuencia del 34 al 128
+# Después accede al número en la posición 37
+```
+*2*
+```markdown
+# Crea un vector donde guardes los nombres de: el amor de tu vida, la persona que más te caiga gorda del trabajo,
+# el niño que te pegaba en la primaria, tu mejor amigo, el famoso que más odies y tu película favorita
+# Después accede al nombre de la posición 4
+```
+
+
+# Listas
+
+Las listas son distintas de los vectores atómicos porque sus elementos pueden ser de cualquier tipo (heterogéneos), incluso puede haber listas dentro de una lista. Para construir una lista se utiliza la función list( ) en lugar de c( ).
+
+
+
+
+
+
 
 
 
@@ -220,106 +314,6 @@ print(caja3)
 # Imprime el valor de ambos objetos
 
 ```
-
-
-# Estructuras de datos
-
-En cualquier lenguaje de programación existen las estructuras de datos. Como ya hemos visto anteriormente, R se basa en la construcción de objetos que podemos modificar como queramos para hacer operaciones, consultas, correr algoritmos, etc. Sin embargo, dado en puntuales excepciones, casi nunca nos va a pasar que dentro de nuestros objetos tengamos valores aislados (como un 10 solito, una sola palabra, un número decimal individual...), sino que dentro de nuestros objetos tendremos datos ordenanos, es decir, probablemente en nuestros objetos tengamos tablas, matrices, archivos de excel, gráficas o vectores. No un solo número pedorro.
-
-Es así que lógicamente podemos intuir que las _estructuras de datos_ son todas aquellas maneras existentes de ordenar nuestros datos (duh). Al igual que con los tipos de datos, estas estructuras son muy numerosas, pero las principales son:
-
-- Vectores.
-- Factores.
-- Matrices.
-- **Data frames**.
-- Listas.
-
-A continuación veremos las propiedades, generalidades de cada una de estas estructuras y cuando es conveniente trabajar con una o con otra.
-
-### Vectores
-
-En programación un vector está definido como "una zona de almacenamiento contiguo que contiene una serie lineal de elementos del mismo tipo" (*Bell, 2003*). En otras palabras, un vector es simplemente un conjunto de elementos ordenados en fila, es decir que es de una sola dimensión. 
-
-![lol](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Array1.svg/1920px-Array1.svg.png)
-
-El ejemplo por excelencia de un vector es una secuencia numérica, digamos, del 1 al 10 o del 1 al 100.
-
-```markdown
-# Para crear un vector SIEMPRE tenemos que decirle a R que queremos hacer una serie lineal,
-# hacemos esto con la función c() que significa concatenar
-
-a <- c(1,2,3,4,5,6,7,8,9,10)  # hemos creado un objeto llamado "a" donde guardamos un vector con los números del 1 al 10
-
-# Sin embargo, no es muy cómodo ir escribiendo número por número los elementos de nuestro vector.
-# ¿Qué pasaría si queremos hacer un vector de 1000 números?
-# Esto se soluciona con " : ", que se puede leer como "de tal a tal número"
-
-b <- c( 1:10 )  # esta instrucción se puede leer como "crea un objeto b donde guardes un vector del 1 al 10 (de tal a tal numero)
-
-```
-Ahora que sabemos qué es un vector, es necesario aclarar que una característica muy importante de ellos es que cada elemento cuenta con una celda para él. Estas celdas individuales reciben el nombre de posición o subíndice. En el caso de nuestra secuencia 1:10, resulta fácil ubicar la posición de cada dígito, la posición 1 va con el primer valor (1), la segunda con el segundo valor (2), la tercera con el tercer valor (3)... etc. Pero casi nunca será ese nuestro caso. Ilustremos un ejemplo:
-
-Queremos almacenar la edad de 6 personas, dado que solo queremos hacer una secuencia de estas edades, el producto resultante es un vector numérico.
-
-```markdown
-EDAD <- c(18, 22, 25, 23, 17, 19) # creamos un objeto/variable llamado 'EDAD' donde guardamos un vector de 5 elementos, cada elemento corresponde a una edad
-print(EDAD)
-```
-En este sencillo ejemplo, podemos ver que el subíndice 1 tiene un valor de 18, el subíndice 2 tiene uno de 22... y así y así. Ahora que hemos explicado bien la idea, podemos pensar en nuestro vector (y en todos los vectores) de la siguiente manera:
-
-![ejemplo](https://progracomputacional.files.wordpress.com/2015/08/vecuni.gif)
-
-Fácil 😄
-
-Ahora recordemos que en un arreglo o vector podemos guardar elementos del mismo tipo, por lo que no solo podemos guardar series numéricas sino también series de caracteres.
-
-```markdown
-# Creemos un vector de caracteres
-
-v.character <- c("hola", "cómo", "estás", "?")
-print(v.character) # tenemos una secuencia lineal de valores del tipo character 
-```
-Siguiendo la misma lógica de la ilustración pasada, cada subíndice ahora en lugar de guardar un valor numérico almacena un valor de caracter.
-
-**Importante.** Toda esta explicación fue necesaria para llegar al punto central de los vectores: puedes acceder a los subíndices de manera sencilla usando corchetes " [] "
-
-```markdown
-# Creémos un vector numérico con los dígitos del 25 al 52
-v.numerico <- c(25:52)
-
-# PREGUNTA. Si estuvieras en excel o cualquier otro programa, ¿cómo accederías al valor 17 del vector?
-# ¿Cómo lo harías en R? -> la respuesta es simplemente usando []
-v.numerico[17] 
-
-# así obtenemos el valor número 17 de nuestro vector, que corresponde al número 41
-```
-
-Otro ejemplo más con vectores de caracter:
-
-```markdown
-v.familia <- c("Emiliano", "Natalia", "Dulce", "Josue", "Martha") # creamos un vector llamado v.familia donde están los nombres de los integrantes de mi familia lol
-
-# queremos obtener el nombre que ocupa la posición 3, la lógica es la misma:
-v.familia[3] 
-
-# Dulce es el nombre que ocupa la tercera posición
-```
-
-Ejercicios
-
-*1*
-```markdown
-# Crea un vector con el nombre que quieras donde guardes una secuencia del 34 al 128
-# Después accede al número en la posición 37
-```
-*2*
-```markdown
-# Crea un vector donde guardes los nombres de: el amor de tu vida, la persona que más te caiga gorda del trabajo,
-# el niño que te pegaba en la primaria, tu mejor amigo, el famoso que más odies y tu película favorita
-# Después accede al nombre de la posición 4
-```
-
-
 
 
 
