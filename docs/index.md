@@ -170,7 +170,7 @@ Ahora R sí va a detectar los nombres.
 
 
 
-Además, podemos pensar en los vectores atómicos simplemente como un conjunto de elementos ordenados en fila, es decir que es de una sola dimensión. 
+Además, podemos pensar en los vectores atómicos simplemente como un conjunto de elementos ordenados en fila, es decir, de una sola dimensión. 
 
 ![lol](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Array1.svg/1920px-Array1.svg.png)
 
