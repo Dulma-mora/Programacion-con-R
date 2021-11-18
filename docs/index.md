@@ -256,7 +256,7 @@ Ejercicios
 
 Las listas son distintas de los vectores atómicos porque sus elementos pueden ser de cualquier tipo (heterogéneos), incluso puede haber listas dentro de una lista. Para construir una lista se utiliza la función list( ) en lugar de c( ).
 
-
+Son por generalidad, estructuras más complejas que los vectores atómicos, el más popular de todos es el Data Frame.
 
 
 
