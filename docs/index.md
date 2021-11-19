@@ -81,13 +81,44 @@ Las Operaciones Lógicas son expresiones matemáticas cuyo resultado es un valor
 **Lista de operadores lógicos en R**
 
 | Operador Lógico | Descripción |
-| ---             | ---         |
+| :---:             | ---         |
 | & | Comparación lógica 'AND' entre dos elementos |
 | && | Comparación lógica 'AND' entre vectores |
 | '\|'  | Comparación lógica 'OR' entre elementos |
 | '\|\|' | Comparación lógica 'OR' de vectores |
 | ! | Negación loógica 'NOT' |
 
+Veamos algunos ejemplos de operaciones:
+
+```markdown
+
+# Operaciones lógicas con números
+
+40 & 5 > 30 # FALSE
+40 | 5 > 30 # TRUE
+!TRUE  # FALSE
+!FALSE # TRUE
+
+# Creamos dos vectores X y Y
+
+x <- c(3, 4, 5)
+y <- c(3, 5, 1)
+
+# Operaciones lógicas con esos vectores
+
+x & y   # TRUE TRUE TRUE
+x && y  # TRUE
+
+x | y   # TRUE TRUE TRUE
+x || y  # TRUE
+
+!x # FALSE FALSE FALSE
+
+xor(x, y) # FALSE FALSE FALSE
+
+```
+
+Tal vez no tenga nada de sentido qué es un vector, cómo escribir en la consola ni los resultados que obtenemos, todo ello cobrará sentido más adelante. Por el momento lo que nos interesa es entender cómo funcionan las operaciones lógicas en R.
 
 
 ## Vectores
