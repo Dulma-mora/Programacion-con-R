@@ -258,12 +258,6 @@ Las listas son distintas de los vectores atómicos porque sus elementos pueden s
 
 Son por generalidad, estructuras más complejas que los vectores atómicos, el más popular de todos es el Data Frame.
 
-
-
-
-
-
-
 # Variables
 
 Ahora que vimos los principales tipos de datos, es importante que sepamos qué hacer con ellos. No podemos simplemente ir escribiendo todas nuestras operaciones en la consola como si fuera una calculadora, eso haría que perdieramos muchos datos en el proceso, resultados e información útil. Es así que veremos qué son las variables.
