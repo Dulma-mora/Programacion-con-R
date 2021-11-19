@@ -85,7 +85,7 @@ Las Operaciones Lógicas son expresiones matemáticas cuyo resultado es un valor
 | & | Comparación lógica 'AND' entre dos elementos |
 | && | Comparación lógica 'AND' entre vectores |
 | '\|'  | Comparación lógica 'OR' entre elementos |
-| '\||' | Comparación lógica 'OR' de vectores |
+| '\|\|' | Comparación lógica 'OR' de vectores |
 | ! | Negación loógica 'NOT' |
 
 
