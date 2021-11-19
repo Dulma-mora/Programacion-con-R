@@ -63,7 +63,6 @@ Dentro de esta pestaña podemos encontrar cinco ventanas donde podemos observar 
 Es el espacio donde podremos controlar las configuraciones de nuestros archivos como 'Guardar', 'Abrir Archivo', 'Ajustes', etc.
 
 
-
 # Tipos de datos
 
 En R, las estructuras de datos pueden ser organizadas respecto a su dimensión y su contenido. Por dimensión entendemos que es una estructura plana de una dimensión, de dos dimensiones o de n dimensiones. Por su contenido nos referimos a si es homogeneo (datos del mismo tipo) o heterogeneo (datos de distintos tipos). Así, tenemos la siguiente clasificación para referirse a los cinco tipos de datos en R:
@@ -73,6 +72,23 @@ En R, las estructuras de datos pueden ser organizadas respecto a su dimensión y
 | 1d | Vectores atómicos | List |
 | 2d | Matrices | Data Frames |
 | 3d | Arrays | 
+
+## Operaciones lógicas
+
+Antes de comenzar a ver todos los tipos de datos, funciones y variables que existen en R, es importante hablar de las operaciones lógicas.
+Las Operaciones Lógicas son expresiones matemáticas cuyo resultado es un valor booleano o lógico ('TRUE' o 'FALSE'), es decir, solo podemos obtener dos posibles resultados. Estas expresiones suelen utilizarse en expresiones de control para especificar *condiciones* entre objetos.
+
+**Lista de operadores lógicos en R**
+
+| Operador Lógico | Descripción |
+| ---             | ---         |
+| & | Comparación lógica 'AND' entre dos elementos |
+| && | Comparación lógica 'AND' entre vectores |
+| '|'  | Comparación lógica 'OR' entre elementos |
+| '||' | Comparación lógica 'OR' de vectores |
+| ! | Negación loógica 'NOT' |
+
+
 
 ## Vectores
 
