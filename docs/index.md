@@ -305,6 +305,37 @@ Las listas son distintas de los vectores atómicos porque sus elementos pueden s
 
 Son por generalidad, estructuras más complejas que los vectores atómicos, el más popular de todos es el Data Frame.
 
+## Data Frames 
+
+Los Data Frames son la forma más popular de guardar datos en R porque en general, hace el manejo de datos más fácil. Al ser uns estructura del tipo lista, es necesariamente de dos dimensiones, aunque también tiene propiedades de una matriz. Un Data Frame puede tener:
+
+- names( ).
+- colnames( ).
+- rownames( ).
+- length( ).
+- nrow( ).
+- ncol( ).
+
+### Creando Data Frames
+
+Para poder crear Data Frames usamos la función 'data.frame( )' que toma vectores con nombre como entrada para generar el Data Frame (DT).
+***Recordemos que un vector con nombre es una variable (caja) con un vector guardado***
+
+```markdown
+# creando dos vectores "x" y  "y" con secuencias dentro
+
+x <- 1:3
+
+y <- c("a", "b", "c")
+```
+
+
+
+
+
+
+
+
 # Variables
 
 Ahora que vimos los principales tipos de datos, es importante que sepamos qué hacer con ellos. No podemos simplemente ir escribiendo todas nuestras operaciones en la consola como si fuera una calculadora, eso haría que perdieramos muchos datos en el proceso, resultados e información útil. Es así que veremos qué son las variables.
