@@ -318,7 +318,7 @@ Los Data Frames son la forma más popular de guardar datos en R porque en genera
 
 ### Creando Data Frames
 
-Para poder crear Data Frames usamos la función 'data.frame( )' que toma vectores con nombre como entrada para generar el Data Frame (DT).
+Para poder crear Data Frames usamos la función 'data.frame( )' que toma vectores con nombre como entrada para generar el Data Frame (DF).
 ***Recordemos que un vector con nombre es una variable (caja) con un vector guardado***
 
 ```markdown
@@ -329,8 +329,19 @@ x <- 1:3
 y <- c("a", "b", "c")
 ```
 
+Ahora que creamos dos vectores con nombre (las dos dimensiones de nuestro DF), le pedimos a R por medio de función data.frame( ) que las fusione para crear nuestro DF.
 
+```markdown
+# Creando un df con los dos vectores que creamos anteriormente
+# llamaremos a nuestro data frame "df"
 
+df <- data.frame(x, y)
+```
+Si imprimimos nuestro DF, se verá como algo así:
+
+| a | b | c |
+|---|---|---|
+|1  | 2 | 3 |
 
 
 
