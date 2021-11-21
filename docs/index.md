@@ -191,7 +191,6 @@ Los vectores atómicos lógicos, o también conocidos como 'valores booleanos', 
 Si quisiésemos saber cuántas personas enfermas hay en la tabla, nuestra búsqueda se resume a calcular el número de TRUE en la columna de enfermos. Y lo mismo para encontrar a las personas sanas.
 
 
-
 #### Character values
 
 Los valores de caractér son todas las secuencias de palabras o dígitos. Usualmente se usan para procesar cadenas de texto (palabras) y pueden mezclarse con números también. Sin embargo, los números que sean guardados como caracteres dejarán de poder usarse para hacer operaciones, ya que no se detectan como valores numéricos, sino como cadenas de texto.
@@ -214,8 +213,6 @@ Por ejemplo, con caracteres podemos guardar los nombres de pacientes de una tabl
 | "Dulma"    | 'FALSE'   |
 
 Ahora R sí va a detectar los nombres.
-
-
 
 Además, podemos pensar en los vectores atómicos simplemente como un conjunto de elementos ordenados en fila, es decir, de una sola dimensión. 
 
@@ -339,9 +336,11 @@ df <- data.frame(x, y)
 ```
 Si imprimimos nuestro DF, se verá como algo así:
 
-| a | b | c |
-|---|---|---|
-|1  | 2 | 3 |
+| x | y |
+|---|---|
+| 1 | a |
+| 2 | b |
+| 3 | c |
 
 Los nombres 'names()' de un df se refiere a literalmente los nombres de las columnas (abreviado col). Ejemplo:
 
@@ -350,8 +349,26 @@ Los nombres 'names()' de un df se refiere a literalmente los nombres de las colu
 
 names(df)
 
-R= "a", "b", "c"
+R= "x", "y"
 ```
+
+La función names() en este caso hablando de df es exactamente lo mismo que escribir colnames() que busca los nombres de las columnas. La diferencia entre ambas funciones es que names() la podemos usar para más estructuras de datos además de los df.
+
+
+La función rownames() podemos intuir que es algo parecido, solo que en este caso lo que nos va a arrojar la consulta, son los nombres de los **renglones** (rows en inglés). Por ejemplo:
+
+```markdown
+# Preguntemos a R cuales son los nombres de los renglones de nuestro df
+
+rownames(df)
+
+R= c(1, 2, 3)
+
+```
+
+
+
+
 
 
 
