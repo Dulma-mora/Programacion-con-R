@@ -307,7 +307,7 @@ Son por generalidad, estructuras más complejas que los vectores atómicos, el m
 
 ## Data Frames 
 
-Los Data Frames son la forma más popular de guardar datos en R porque en general, hace el manejo de datos más fácil. Al ser uns estructura del tipo lista, es necesariamente de dos dimensiones, aunque también tiene propiedades de una matriz. Un Data Frame puede tener:
+Los Data Frames son la forma más popular de guardar datos en R porque en general, hace el manejo de datos más fácil. Al ser uns estructura del tipo lista, es necesariamente de dos dimensiones, aunque también tiene propiedades de una matriz. Un Data Frame cuenta con:
 
 - names( ).
 - colnames( ).
@@ -342,6 +342,16 @@ Si imprimimos nuestro DF, se verá como algo así:
 | a | b | c |
 |---|---|---|
 |1  | 2 | 3 |
+
+Los nombres 'names()' de un df se refiere a literalmente los nombres de las columnas (abreviado col). Ejemplo:
+
+```markdown
+# Preguntemos a R cuales son los nombres de nuestro df
+
+names(df)
+
+R= "a", "b", "c"
+```
 
 
 
