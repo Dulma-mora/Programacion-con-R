@@ -366,11 +366,36 @@ R= c(1, 2, 3)
 
 ```
 
+La función length( ) nos permite consultar la extensión de nuestro df. Es decir, la función length() nos regresará el número de columnas (cols) presentes en nuestro df.
 
+```markdown
+# Preguntemos a R cual es la extensión de nuestro df
 
+length(df)
 
+R= 2
+```
 
+Las funciones que usualmente empiecen con "n" serán referentes al número de algo. Por ejemplo, la función ncol() nos permite obtener el número de columnas, mientras que nrow() el número de renglones. 
 
+Probablemente notarás que en este contexto, la función length() y ncol() nos darán el mismo resultado, el número de columnas (que también es la longitud de nuestro df). Aunque a diferencia de ncol(), se puede utilizar la función length() para arreglos de una dimensión.
+
+```markdown
+# Obteniendo el número de renglones 
+
+nrow(df)
+
+R= 3
+```
+
+```markdown
+# Obteniendo el número de columnas
+
+ncol(df)
+
+R= 2
+
+```
 
 
 
